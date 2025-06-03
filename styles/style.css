@@ -22,3 +22,32 @@ nav {
     padding: 5px;
   }
 }
+
+.nav-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #40dde3;
+  color: #121213;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Orbitron", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: #36b8c0;
+}
+
+.nav-btn:active {
+  background-color: #2a8f95;
+}
+@media (max-width: 600px) {
+  .nav-btn {
+    width: 100%;
+  }
+}
