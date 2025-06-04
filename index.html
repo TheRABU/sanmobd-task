@@ -11,18 +11,197 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo-container">
-          <img class="logo" src="./assets/logo.svg" alt="logo" />
+    <main>
+      <!-- NAVBAR AND HERO SECTION -->
+      <header>
+        <nav>
+          <div class="logo-container">
+            <img class="logo" src="./assets/logo.svg" alt="logo" />
+          </div>
+          <div class="logo-button">
+            <button class="nav-btn primary-btn">Launch hashrid.</button>
+          </div>
+        </nav>
+        <section class="hero">
+          <div class="hero-container">
+            <div class="progress-bar">
+              <div class="progress-bar-inner">5000 XP</div>
+            </div>
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span>The XP-Powered</span> <br />Web3 Social Protocol
+              </h1>
+              <p class="hero-subtitle">
+                Build your persona. Battle in memes. Earn your clout.
+              </p>
+            </div>
+            <div class="hero-buttons">
+              <h1>Join the XP Waitlist</h1>
+              <form>
+                <label for="hero-input">
+                  <input
+                    type="text"
+                    id="hero-input"
+                    name="hero-input"
+                    class="hero-input"
+                    placeholder="degan@gmail.com"
+                  />
+                  <button id="waitlist-btn" class="primary-btn">
+                    Get Notified
+                  </button>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="bar"></div>
+        </section>
+      </header>
+      <!-- ABOUT SECTION -->
+      <section class="about">
+        <div class="about-component">
+          <button id="about-btn" class="about-btn">Meet Hashrid</button>
+
+          <p class="about-text">
+            Hashrid is a gamified Web3 social platform where users create AI
+            personas, battle with memes, earn XP, unlock NFT badges, and
+            monetize their influence — all without needing tokens.
+          </p>
+          <p class="about-text-end">
+            It combines the cultural virality of meme communities with the
+            mechanics of gaming and the ownership of Web3.
+          </p>
         </div>
-        <div class="logo-button">
-          <button class="nav-btn">Launch hashrid.</button>
+      </section>
+      <!-- FEATURES SECTION -->
+      <section class="feature">
+        <div class="feature-head">
+          <button class="feature-btn">Features That Power The Culture</button>
+          <p class="feature-text">
+            Hashrid isn't just another platform — it's a social protocol
+            designed for crypto creators, memers, and XP-driven identities.
+            Every feature is gamified, rewarding, and built for the future of
+            online clout.
+          </p>
         </div>
-      </nav>
-      <section class="hero"></section>
-    </header>
+        <div class="feature-cards">
+          <div class="card-section-upper">
+            <div class="card">
+              <div class="icon">
+                <img
+                  class="card-img"
+                  src="./assets/face.svg"
+                  alt="card-face-icon-at-top"
+                />
+              </div>
+              <div class="card-content">
+                <img class="card-content-img" src="./assets/card1.svg" alt="" />
+                <div class="card-text-content">
+                  <h3>AI Persona Creator</h3>
+                  <p>
+                    Craft your Crypto Identity<br />Design a unique digital
+                    persona that evolves as you are — your vibe, your voice,
+                    your legend.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <img
+                  class="card-img"
+                  src="./assets/face.svg"
+                  alt="card-face-icon-at-top"
+                />
+              </div>
+              <div class="card-content">
+                <img class="card-content-img" src="./assets/card2.svg" alt="" />
+                <div class="card-text-content">
+                  <h3>Meme Battles (PvP Arena)</h3>
+                  <p>
+                    Roast. React. Repeat.<br />Enter head-to-head meme duels,
+                    earn XP through reactions, and dominate the leaderboard with
+                    your content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <img
+                  class="card-img"
+                  src="./assets/face.svg"
+                  alt="card-face-icon-at-top"
+                />
+              </div>
+              <div class="card-content">
+                <img class="card-content-img" src="./assets/card3.svg" alt="" />
+                <div class="card-text-content">
+                  <h3>XP-Based Leaderboard</h3>
+                  <p>
+                    Clout You Can Measure<br />Climb the ranks by earning XP
+                    through posts, battles, and engagement. The higher your XP,
+                    the more you unlock.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-section-lower">
+            <div class="lower-card">
+              <div class="lower-card-left">
+                <div class="card-content">
+                  <div class="icon">
+                    <img
+                      class="card-img"
+                      src="./assets/face.svg"
+                      alt="card-face-icon-at-top"
+                    />
+                  </div>
+                  <h3>NFT Badge Vault</h3>
+                  <p>
+                    Earn it. Flaunt it. Own it.<br />Unlock one-of-a-kind NFT
+                    badges based on your performance — your proof of skill and
+                    cultural value.
+                  </p>
+                </div>
+              </div>
+              <div class="lower-card-right">
+                <img src="./assets/lowerCard1.svg" alt="" />
+              </div>
+            </div>
+            <div class="lower-card">
+              <div class="lower-card-left">
+                <div class="card-content">
+                  <div class="icon">
+                    <img
+                      class="card-img"
+                      src="./assets/face.svg"
+                      alt="card-face-icon-at-top"
+                    />
+                  </div>
+                  <div class="lower-card-text">
+                    <h3>Creator Monetization</h3>
+                    <p>
+                      Earn from Your Memes.<br />Cross XP engagement thresholds
+                      to activate monetization and start earning real revenue —
+                      no token needed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="lower-card-right">
+                <img src="./assets/lowerCard2.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
