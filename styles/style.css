@@ -428,3 +428,88 @@ form input #waitlist-btn {
     width: 40%;
   }
 }
+
+/* HOW TO USE HASRHIP SECTION */
+.usage {
+  width: 100%;
+  padding: 50px 40px;
+  text-align: center;
+}
+.usage-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.usage-card {
+  max-width: 350px;
+  height: max-content;
+  background-color: #1a1a1a;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #404040;
+  transition: 0.3s ease;
+  box-shadow: 0 0 0px rgba(0, 255, 255, 0.4);
+}
+.usage-card .img-div {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+.usage-card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.usage-card-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: left;
+  padding: 8px;
+  width: 80%;
+}
+.usage-card-text-content span {
+  color: #999999;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+}
+.usage-card-text-content h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.usage-card-text-content p {
+  font-size: 14px;
+  color: #999999;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .usage {
+    padding: 30px 20px;
+  }
+
+  .usage-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .usage-card {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .usage-card-text-content {
+    width: 100%;
+    text-align: center;
+  }
+}
