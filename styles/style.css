@@ -168,6 +168,38 @@ form input #waitlist-btn {
   margin: 20px 0;
 }
 
+/* HERO SECTION'S REPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .hero-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .hero-content .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-content .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .progress-bar {
+    width: 80%;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form input,
+  #waitlist-btn {
+    position: static;
+    width: 100%;
+  }
+}
+
 /* ABOUT SECTION */
 .about {
   width: 100%;
@@ -202,6 +234,18 @@ form input #waitlist-btn {
   padding: 12px 24px;
   background-color: #121213;
   color: #40dde3;
+}
+/* ABOUT SECTION'S RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .about-component {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .about-component p {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 /* FEATURE SECTION */
@@ -289,7 +333,34 @@ form input #waitlist-btn {
   border-color: cyan;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
 }
+/* UPPER CARD SECTION */
+@media (max-width: 768px) {
+  .feature {
+    padding: 30px 20px;
+  }
 
+  .feature-text {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .card-section-upper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .card-content p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* LOWER CARD SECTION */
 .card-section-lower {
   display: flex;
   justify-content: center;
@@ -308,25 +379,52 @@ form input #waitlist-btn {
   box-shadow: 0 0 0px rgba(0, 255, 255, 0.4);
   display: flex;
 }
-.lower-card-text {
+.lower-card-text-content {
   padding-top: 20px;
   align-items: center;
   justify-content: center;
 }
 .lower-card-left {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.lower-card-left-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
 .lower-card-right img {
   width: 100%;
-  height: auto;
+  height: 150px;
   object-fit: cover;
   border-radius: 12px;
 }
 .lower-card:hover {
   border-color: cyan;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+@media (max-width: 768px) {
+  .card-section-lower {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lower-card {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .lower-card-left,
+  .lower-card-text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .lower-card-right img {
+    width: 40%;
+  }
 }
