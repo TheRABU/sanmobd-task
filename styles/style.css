@@ -252,7 +252,6 @@ form input #waitlist-btn {
 .feature {
   width: 100%;
   padding: 50px 40px;
-  background-color: #121213;
 }
 .feature-head {
   text-align: center;
@@ -452,6 +451,10 @@ form input #waitlist-btn {
   transition: 0.3s ease;
   box-shadow: 0 0 0px rgba(0, 255, 255, 0.4);
 }
+.usage-card:hover {
+  border-color: cyan;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
 .usage-card .img-div {
   width: 100%;
   padding: 16px;
@@ -517,7 +520,6 @@ form input #waitlist-btn {
 /* PARTNERS SECTION */
 .partners {
   width: 100%;
-  background-color: #121213;
   text-align: center;
 }
 .partners-component {
@@ -546,11 +548,10 @@ form input #waitlist-btn {
   grid-template-columns: repeat(1, 1fr);
   gap: 12px;
   justify-items: center;
-  padding: 10px;
+  padding: 2.5rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  background-color: #121213;
 }
 .partner-card {
   display: flex;
@@ -562,6 +563,10 @@ form input #waitlist-btn {
   max-width: 270px;
   padding: 18px;
 }
+.partner-card:hover {
+  border-color: cyan;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
 .partner-card img {
   width: 100%;
   height: 100%;
@@ -570,5 +575,94 @@ form input #waitlist-btn {
 @media (min-width: 768px) {
   .partners-card-section {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* FAQ SECTION */
+
+.faq-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  color: #fff;
+  font-family: sans-serif;
+}
+.faq-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 35px;
+}
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+}
+
+.accordion-item {
+  background: #1f1f1f;
+  border: 1px solid #888;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-header {
+  background: transparent;
+  color: #ccc;
+  font-weight: bold;
+  padding: 16px;
+  text-align: left;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-header::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  color: #00ffff;
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  content: "x";
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  font-size: 0.95rem;
+  color: #aaa;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-body.open {
+  padding: 16px;
+}
+@media (max-width: 768px) {
+  .accordion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accordion-header {
+    font-size: 1.2rem;
+  }
+
+  .accordion-body {
+    font-size: 1rem;
   }
 }
