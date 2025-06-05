@@ -14,3 +14,12 @@ document.querySelectorAll(".accordion-header").forEach((header) => {
     }
   });
 });
+
+document.getElementById("waitlist-btn").addEventListener("click", (e) => {
+  e.preventDefault();
+  const inputValue = document.getElementById("footer-input").value;
+  console.log(inputValue);
+  setTimeout(() => {
+    alert("Found your Email. We will notify you soon: " + inputValue);
+  }, 2000);
+});

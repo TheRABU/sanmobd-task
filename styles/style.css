@@ -39,7 +39,8 @@ nav {
 
 .primary-btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 10px;
+  width: 200px;
   background-color: #40dde3;
   color: #121213;
   text-align: center;
@@ -74,12 +75,59 @@ nav {
   justify-content: center;
   text-align: center;
   padding: 50px 20px;
+  backdrop-filter: blur(15px);
+}
+.left-side-bar {
+  height: 40%;
+  background-color: #40dde3;
+  position: absolute;
+  left: -20px;
+  top: 100px;
+  z-index: -1;
+}
+.left-side-bar-img,
+.right-side-bar-img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+}
+.right-side-bar {
+  height: 45%;
+  background-color: #40dde3;
+  position: absolute;
+  right: 300px;
+  bottom: 100px;
+  z-index: -1;
+  transform: rotate(360deg);
 }
 
+.middle-left-bar {
+  height: 75%;
+  background-color: #40dde3;
+  position: absolute;
+  left: 50px;
+  bottom: 75px;
+  z-index: -1;
+}
+
+.middle-right-bar {
+  height: 80%;
+  background-color: #40dde3;
+  position: absolute;
+  right: 400px;
+  bottom: 70px;
+  z-index: -1;
+}
+.middle-left-bar-img,
+.middle-right-bar-img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+}
 .progress-bar {
   width: 40%;
   height: 20px;
-  background-color: #e0e0e0;
+  background-color: #2a6263;
   border-radius: 5px;
   overflow: hidden;
   margin-top: 20px;
@@ -91,15 +139,20 @@ nav {
   background-color: #40dde3;
   border-radius: 100px;
   transition: width 0.5s ease-in-out;
+  padding: 2px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .hero-container {
-  max-width: 1050px;
-  width: 50%;
+  max-width: 1100px;
+  width: 65%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 29px;
   background: linear-gradient(180deg, #121214 0%, rgba(18, 18, 20, 0) 100%);
+  backdrop-filter: blur(15px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,56 +165,78 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px 20px;
+  padding: 20px 10px;
 }
 .hero-content .hero-title {
   width: 100%;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 900;
   color: #999999;
   font-family: "Orbitron", sans-serif;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  background: linear-gradient(180deg, #fff 0%, #999999 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 .hero-content .hero-subtitle {
-  font-size: 18px;
+  font-size: 15px;
   color: #dedede;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   width: 100%;
 }
 
-form {
+.form-div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 500px;
 }
-form input {
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  color: var(--text-color);
+.form-div p {
+  color: #dedede;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.waitlist-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.hero-input {
+  width: 28%;
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px solid #404040;
+  border: none;
+  border-radius: 10px;
+  height: auto;
   position: absolute;
+  text-align: start;
+  background: #12121373;
 }
-form input #waitlist-btn {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 12px;
+.hero-waitlist-btn {
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
-  background-color: var(--accent-color);
-  color: var(--button-text-color);
-  font-size: 16px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #40dde3;
+  color: black;
   cursor: pointer;
+  position: relative;
+  margin-bottom: 12px;
+  left: 62%;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .bar {
-  width: 52%;
+  width: 60%;
   height: 20px;
   border-radius: 26px;
   background-color: #999999;
@@ -172,10 +247,29 @@ form input #waitlist-btn {
 
 @media (max-width: 768px) {
   .hero-container {
-    width: 90%;
+    width: 100%;
     padding: 15px;
   }
-
+  .left-side-bar {
+    width: 2px;
+    height: 40%;
+    background-color: #40dde3;
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    z-index: -1;
+  }
+  .middle-left-bar {
+    height: 50%;
+    left: 0px;
+    bottom: 20px;
+  }
+  .middle-right-bar {
+    display: none;
+  }
+  .right-side-bar {
+    display: none;
+  }
   .hero-content .hero-title {
     font-size: 28px;
   }
@@ -188,14 +282,20 @@ form input #waitlist-btn {
     width: 80%;
   }
 
-  form {
+  .form-div {
     flex-direction: column;
     gap: 10px;
   }
 
-  form input,
-  #waitlist-btn {
+  .hero-input,
+  .hero-waitlist-btn {
     position: static;
+    width: 100%;
+  }
+  .hero-waitlist-btn {
+    padding: 10px;
+  }
+  .bar {
     width: 100%;
   }
 }
@@ -443,7 +543,7 @@ form input #waitlist-btn {
 }
 .usage-card {
   max-width: 350px;
-  height: max-content;
+  height: 512px;
   background-color: #1a1a1a;
   padding: 12px;
   border-radius: 12px;
@@ -509,6 +609,7 @@ form input #waitlist-btn {
   .usage-card {
     width: 90%;
     max-width: 100%;
+    height: auto;
   }
 
   .usage-card-text-content {

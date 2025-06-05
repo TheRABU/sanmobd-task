@@ -30,7 +30,35 @@
           </div>
         </nav>
         <section class="hero">
+          <div class="left-side-bar">
+            <img
+              class="left-side-bar-img"
+              src="./assets/leftsideBar.svg"
+              alt=""
+            />
+          </div>
+          <div class="right-side-bar">
+            <img
+              class="right-side-bar-img"
+              src="./assets/rightsideBar.svg"
+              alt=""
+            />
+          </div>
           <div class="hero-container">
+            <div class="middle-left-bar">
+              <img
+                class="middle-left-bar-img"
+                src="./assets/middleLeftBar.svg"
+                alt=""
+              />
+            </div>
+            <div class="middle-right-bar">
+              <img
+                class="middle-right-bar-img"
+                src="./assets/middleRightBar.svg"
+                alt=""
+              />
+            </div>
             <div class="progress-bar">
               <div class="progress-bar-inner">5000 XP</div>
             </div>
@@ -42,22 +70,20 @@
                 Build your persona. Battle in memes. Earn your clout.
               </p>
             </div>
-            <div class="hero-buttons">
-              <h1>Join the XP Waitlist</h1>
-              <form>
-                <label for="hero-input">
-                  <input
-                    type="text"
-                    id="hero-input"
-                    name="hero-input"
-                    class="hero-input"
-                    placeholder="degan@gmail.com"
-                  />
-                  <button id="waitlist-btn" class="primary-btn">
-                    Get Notified
-                  </button>
-                </label>
-              </form>
+            <div class="form-div">
+              <p>Join the XP Waitlist</p>
+              <div class="waitlist-div">
+                <input
+                  type="text"
+                  id="hero-input"
+                  name="hero-input"
+                  class="hero-input"
+                  placeholder="degan@gmail.com"
+                />
+                <button id="waitlist-btn" class="hero-waitlist-btn">
+                  Get Notified
+                </button>
+              </div>
             </div>
           </div>
           <div class="bar"></div>
@@ -376,6 +402,7 @@
           </div>
         </div>
       </section>
+      <!-- TEXT SECTION -->
       <section class="footer-text">
         <div class="left-div-footer-text">
           <h1>
@@ -383,7 +410,7 @@
             <span class="highlight">meme metaverse</span>?
           </h1>
         </div>
-        <form class="waitlist-form">
+        <!-- <form class="waitlist-form">
           <input
             type="text"
             id="footer-input"
@@ -391,9 +418,10 @@
             class="footer-input"
             placeholder="degan@gmail.com"
           />
-          <button class="waitlist-btn">Get Notified</button>
-        </form>
+          <button id="waitlist-btn" class="waitlist-btn">Get Notified</button>
+        </form> -->
       </section>
+      <footer></footer>
     </main>
     <script src="./scripts/index.js"></script>
   </body>
